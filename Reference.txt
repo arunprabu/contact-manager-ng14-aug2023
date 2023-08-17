@@ -1,0 +1,71 @@
+Webapps 
+-----
+  1. SSR (Server Side Rendering Apps)
+      * pages will refresh
+      * traditional apps
+
+  2. CSR (Client Side Rendering Apps)
+      * pages will not refresh 
+      * SPA (front end app) + REST API (back end app)
+      * modern apps
+
+SPA (Single Page Apps)
+----------------------
+  7 Characteristics
+  ==================
+    1. Pages should not reload / refresh 
+    2. URL should change 
+    3. History should be maintained w/o page refresh 
+    4. Header and footer should not be loaded again and again 
+    5. The section in b/w header and footer should show contextual updates
+    6. Active menu should be set
+    7. Page Title should also be changed
+
+  SPA Frameworks / Libraries 
+  ==========================
+    #1 React JS  (library)
+    #2 Vue JS  (framework)
+    #3 Angular (framework) [TO LEARN]
+
+====================
+Angular 
+=========
+  Angular CLI
+  ----------
+    npm i @angular/cli@14.2.12 -g
+
+
+  CLI Version History 
+  ----------
+    Angular cli v 16    === Angular 16 project
+    Angular cli v 15    === Angular 15 project
+    Angular cli v 14    === Angular 14 project
+    Angular cli v 8    === Angular 8 project
+    Angular cli v 6    === Angular 6 project 
+    Angular cli v 1.7.0    === Angular 5 project
+    Angular cli v 1.4.0    === Angular 4 project
+    Angular cli v 1.2.0    === Angular 2 project
+
+Creating new project
+=======
+  ng new <project-name> 
+
+Start the Server
+-----
+  ng serve or ng s 
+
+
+Angular Notes
+=============
+  File Walkthru 
+  ng arch 
+  how ng apps are running?
+  project stucture 
+-----------------
+
+Thinking in Angular 
+------
+  1. Find out the number of components 
+  2. Identify the heierarchy of the components
+  3. .... 
+  4. .... 
