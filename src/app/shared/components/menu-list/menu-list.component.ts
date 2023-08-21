@@ -4,10 +4,19 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-menu-list',
   template: `
     <ul class="navbar-nav flex-grow-1">
-      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Concepts</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Contact Manager App</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Concepts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Manager App</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <ng-content></ng-content>
     </ul>
   `,
   styles: [
