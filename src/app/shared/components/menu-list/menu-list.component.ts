@@ -5,16 +5,16 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <ul class="navbar-nav flex-grow-1">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" routerLink="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Concepts</a>
+        <a class="nav-link" routerLink="/concepts">Concepts</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact Manager App</a>
+        <a class="nav-link" routerLink="/contact-manager">Contact Manager App</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" routerLink="/about">About</a>
       </li>
       <ng-content></ng-content>
     </ul>
