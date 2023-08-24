@@ -250,5 +250,9 @@ Routing
     Check the app. It's over!
 
 
-Eslint Setup & Prettier Setup 
+Eslint Setup & Prettier Setup  (continue tomorrow)
 =============================
+
+Clean Coding Principle 
+======================
+
