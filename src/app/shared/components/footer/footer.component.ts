@@ -14,10 +14,14 @@ import { Component, OnInit } from '@angular/core';
       <p>&copy; Copyright 2023 | Arun</p>
     </footer>
   `,
-  styles: [],
+  styles: []
 })
-export class FooterComponent implements OnInit {
-  
+export class FooterComponent implements OnInit { 
+  x = 10;
+  appName = 'test';
+
+  colors = ['a', 'b', 'c'];
+
   constructor() {}
 
   ngOnInit(): void {}

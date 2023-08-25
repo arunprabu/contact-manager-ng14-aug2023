@@ -3,14 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-contact-list',
   templateUrl: './contact-list.component.html',
-  styles: [
-  ]
+  styles: [],
 })
 export class ContactListComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

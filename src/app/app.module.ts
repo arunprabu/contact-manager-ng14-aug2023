@@ -21,13 +21,10 @@ import { AboutComponent } from './about/components/about/about.component';
     HomeComponent,
     ConceptsComponent,
     ContactListComponent,
-    AboutComponent
+    AboutComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent] // AppModule bootstrapped with a comp -- AppComp
+  bootstrap: [AppComponent], // AppModule bootstrapped with a comp -- AppComp
 })
-export class AppModule { }
+export class AppModule {}

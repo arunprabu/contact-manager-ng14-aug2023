@@ -10,13 +10,13 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'concepts', component: ConceptsComponent },
   { path: 'contact-manager', component: ContactListComponent },
-  { path: 'about', component: AboutComponent }
+  { path: 'about', component: AboutComponent },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes) // registering the routes
+    RouterModule.forRoot(routes), // registering the routes
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -11,7 +11,9 @@ import { Component, OnInit } from '@angular/core';
         <a class="nav-link" routerLink="/concepts">Concepts</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/contact-manager">Contact Manager App</a>
+        <a class="nav-link" routerLink="/contact-manager"
+          >Contact Manager App</a
+        >
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/about">About</a>
@@ -19,14 +21,10 @@ import { Component, OnInit } from '@angular/core';
       <ng-content></ng-content>
     </ul>
   `,
-  styles: [
-  ]
+  styles: [],
 })
 export class MenuListComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
