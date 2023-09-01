@@ -10,6 +10,7 @@ import { HomeComponent } from './home/components/home/home.component';
 import { ConceptsComponent } from './concepts/components/concepts/concepts.component';
 import { ContactListComponent } from './contact-manager/components/contact-list/contact-list.component';
 import { AboutComponent } from './about/components/about/about.component';
+import { FormsModule } from '@angular/forms';
 
 // Main Switching Box
 @NgModule({
@@ -21,10 +22,10 @@ import { AboutComponent } from './about/components/about/about.component';
     HomeComponent,
     ConceptsComponent,
     ContactListComponent,
-    AboutComponent,
+    AboutComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent], // AppModule bootstrapped with a comp -- AppComp
+  bootstrap: [AppComponent] // AppModule bootstrapped with a comp -- AppComp
 })
 export class AppModule {}

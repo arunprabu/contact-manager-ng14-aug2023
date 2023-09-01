@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -11,17 +11,21 @@ import { Component, OnInit } from '@angular/core';
           <a class="nav-link" href="#">Back to Top</a>
         </li>
       </app-menu-list>
-      <p>&copy; Copyright 2023 | Arun</p>
+      <p class="highlighter">&copy; Copyright 2023 | Arun</p>
     </footer>
   `,
-  styles: []
+  styles: [
+    // component specific styles till you have ViewEncapsulation.Emulated
+    // will override global styles when you have ViewEncapsulation.None
+    // will ignore bootstrap and global styles if you set ViewEncapsulation.ShadowDom
+    `
+      .highlighter {
+        background-color: #eee;
+      }
+    `
+  ]
 })
-export class FooterComponent implements OnInit { 
-  x = 10;
-  appName = 'test';
-
-  colors = ['a', 'b', 'c'];
-
+export class FooterComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}

@@ -85,7 +85,7 @@ Building Blocks
 
 Concepts
 ---------
-  Data Binding [TOMORROW]
+  Data Binding [TODAY]
   Routing [DONE]
   Debugging 
   Forms 
@@ -95,6 +95,7 @@ Concepts
   Life Cycle Hooks
   Third party tools integrations (ng material)
   Unit Testing 
+  Lazy Loading
 
 Project Structure
 ----------------
@@ -250,9 +251,49 @@ Routing
     Check the app. It's over!
 
 
-Eslint Setup & Prettier Setup  (continue tomorrow)
+Eslint Setup & Prettier Setup
 =============================
 
 Clean Coding Principle 
 ======================
 
+Data Binding 
+-----
+  keeping the data in comp.ts and displaying in comp.html 
+
+  1. Interpolation 
+      TS ==> HTML 
+      {{}}
+
+  2. Property Binding
+      TS ==> HTML 
+      []
+
+  3. Event Binding 
+      TS <=== HTML 
+      ()
+
+  4. Two Way Binding
+      TS <==> HTML 
+      [(ngModel)]
+
+      Note: try in form elements like input, textarea, select, 
+
+  5. Custom Property Binding
+  6. Custom Event Binding
+
+
+Cross Component Communication
+============================
+  1. Parent to Child Component Communication 
+      using Custom Property Binding (TO LEARN FROM MONDAY)
+
+  2. Child to Parent Component Communication
+      2.1 using Custom Event Binding  (TO LEARN)
+      2.2 using @ViewChild() or @ViewChildren()  (TODO)
+
+  3. Any to Any Component Communication
+      3.1 Using Services, RxJS/Observables, Subcription (TO LEARN)
+      3.2 Using NgRx (third party tool)   (NOT PART OF OUR COURSE)
+
+============================
