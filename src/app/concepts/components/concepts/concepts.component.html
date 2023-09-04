@@ -94,6 +94,13 @@
       aria-labelledby="cpb-tab"
       tabindex="0">
       <h2>Custom Property Binding</h2>
+      <app-user-info></app-user-info>
+      <br />
+      <app-user-info [age]="50"></app-user-info>
+      <br />
+      <app-user-info [age]="80"></app-user-info>
+      <br />
+      <app-user-info [age]="myAge"></app-user-info>
     </div>
     <div
       class="tab-pane fade"
@@ -102,6 +109,15 @@
       aria-labelledby="ceb-tab"
       tabindex="0">
       <h2>Custom Event Binding</h2>
+      <div
+        class="alert alert-success">
+        {{ dataReceivedFromChild?.id }} {{ dataReceivedFromChild?.status }}
+      </div>
+      <!-- Step 3 of Custom Event Binding ---
+         Handle the triggered custom event also pas the data-->
+      <!-- step 4: check concepts.comp.ts -->
+      <app-reports
+        (reportGenerated)="handleReportGenerated($event)"></app-reports>
     </div>
     <div
       class="tab-pane fade"

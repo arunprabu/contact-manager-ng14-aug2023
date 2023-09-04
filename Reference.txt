@@ -286,7 +286,7 @@ Data Binding
 Cross Component Communication
 ============================
   1. Parent to Child Component Communication 
-      using Custom Property Binding (TO LEARN FROM MONDAY)
+      using Custom Property Binding (DONE)
 
   2. Child to Parent Component Communication
       2.1 using Custom Event Binding  (TO LEARN)
@@ -294,6 +294,7 @@ Cross Component Communication
 
   3. Any to Any Component Communication
       3.1 Using Services, RxJS/Observables, Subcription (TO LEARN)
-      3.2 Using NgRx (third party tool)   (NOT PART OF OUR COURSE)
+      3.2 Using NgRx (third party tool)  (TO LEARN)
 
 ============================
+

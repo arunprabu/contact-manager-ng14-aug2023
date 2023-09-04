@@ -11,6 +11,8 @@ import { ConceptsComponent } from './concepts/components/concepts/concepts.compo
 import { ContactListComponent } from './contact-manager/components/contact-list/contact-list.component';
 import { AboutComponent } from './about/components/about/about.component';
 import { FormsModule } from '@angular/forms';
+import { UserInfoComponent } from './concepts/components/user-info/user-info.component';
+import { ReportsComponent } from './concepts/components/reports/reports.component';
 
 // Main Switching Box
 @NgModule({
@@ -22,7 +24,9 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ConceptsComponent,
     ContactListComponent,
-    AboutComponent
+    AboutComponent,
+    UserInfoComponent,
+    ReportsComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
