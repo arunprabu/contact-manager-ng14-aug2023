@@ -12,6 +12,10 @@ export class ConceptsComponent implements OnInit {
   myAge = 24;
   dataReceivedFromChild: any;
 
+  // for directive
+  isLoggedIn = false;
+  skills = ['html', 'css', 'ts', 'ng'];
+
   constructor() {}
 
   ngOnInit(): void {}

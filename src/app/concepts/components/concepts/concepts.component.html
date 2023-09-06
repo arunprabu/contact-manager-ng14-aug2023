@@ -109,8 +109,7 @@
       aria-labelledby="ceb-tab"
       tabindex="0">
       <h2>Custom Event Binding</h2>
-      <div
-        class="alert alert-success">
+      <div class="alert alert-success">
         {{ dataReceivedFromChild?.id }} {{ dataReceivedFromChild?.status }}
       </div>
       <!-- Step 3 of Custom Event Binding ---
@@ -118,6 +117,8 @@
       <!-- step 4: check concepts.comp.ts -->
       <app-reports
         (reportGenerated)="handleReportGenerated($event)"></app-reports>
+
+      <h3 class="alert alert-warning">TODO: Teach about @ViewChild() later</h3>
     </div>
     <div
       class="tab-pane fade"
@@ -126,6 +127,49 @@
       aria-labelledby="directives-tab"
       tabindex="0">
       <h2>Directives</h2>
+
+      <pre>
+        Directives
+        =========
+          * Special Instructions to the DOM 
+
+          1. Attribute Directives 
+              Examples: routerLink, routerLinkActive, formGroup, formControlName
+
+          2. Structural Directives
+              * impact of the directives will be in Structural layer (html)
+              *ngIf 
+              *ngFor 
+              ngSwitch (Todo)
+
+          3. Custom Attribute Directives
+
+          4. Custom Structural Directives (Todo)
+      </pre>
+
+      <h3>*ngIf Demo</h3>
+      <div class="alert alert-success" *ngIf="isLoggedIn; else NotAuthWarning">
+        Thanks for logging in. You can access premium features of the App!
+      </div>
+      <ng-template #NotAuthWarning>
+        <div class="alert alert-danger">
+          You are not authenticated. Please login!
+        </div>
+      </ng-template>
+
+      <h3>*ngFor Demo</h3>
+      <ul>
+        <li *ngFor="let skill of skills; let i = index;">
+          {{ i + 1 }}. {{ skill }}
+        </li>
+      </ul>
+
+      <h3>TODO: ngSwitch...case Demo</h3>
+
+      <h3>Custom Attribute Directive</h3>
+      <div appColorizer>
+        <h4>Colorizer Directive Demo</h4>
+      </div>
     </div>
   </div>
 </div>

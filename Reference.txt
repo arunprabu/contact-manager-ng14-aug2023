@@ -74,6 +74,9 @@ Thinking in Angular
 Building Blocks
 --------
   Components 
+    TS 
+    HTML 
+    CSS 
   Directives 
   Services
   Interfaces [NOT PART OF THIS COURSE]
@@ -85,7 +88,7 @@ Building Blocks
 
 Concepts
 ---------
-  Data Binding [TODAY]
+  Data Binding [DONE]
   Routing [DONE]
   Debugging 
   Forms 
@@ -289,12 +292,34 @@ Cross Component Communication
       using Custom Property Binding (DONE)
 
   2. Child to Parent Component Communication
-      2.1 using Custom Event Binding  (TO LEARN)
-      2.2 using @ViewChild() or @ViewChildren()  (TODO)
+      2.1 using Custom Event Binding  (DONE)
+          Child comp sending data to parent comp
 
-  3. Any to Any Component Communication
+      2.2 using @ViewChild() or @ViewChildren()  (TO LEARN LATER)
+          parent comp accessing the data from child comp 
+          * Prereq: LifeCycle Hooks, Template Reference, Change Detection Concept 
+
+  3. Any to Any Component Communication (TO LEARN LATER)
       3.1 Using Services, RxJS/Observables, Subcription (TO LEARN)
       3.2 Using NgRx (third party tool)  (TO LEARN)
 
 ============================
+
+
+Directives
+=========
+  * Special Instructions to the DOM 
+
+  1. Attribute Directives 
+      Examples: routerLink, routerLinkActive, formGroup, formControlName
+
+  2. Structural Directives
+      * impact of the directives will be in Structural layer (html)
+      *ngIf 
+      *ngFor 
+      ngSwitch (Todo)
+
+  3. Custom Attribute Directives
+
+  4. Custom Structural Directives (Todo)
 
