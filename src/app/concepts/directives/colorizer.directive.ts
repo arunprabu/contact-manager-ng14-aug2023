@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostListener, OnChanges, Renderer2, SimpleChanges } from '@angular/core';
+import { Directive, ElementRef, HostListener, OnChanges, OnInit, Renderer2, SimpleChanges } from '@angular/core';
 
 @Directive({
   selector: '[appColorizer]'
@@ -65,6 +65,6 @@ export class ColorizerDirective {
   // Ref: https://github.com/arunprabu/employee-mgmt-ng-oct2022/blob/master/src/app/unit-testing-demo/directives/highlight.directive.ts
 
   // ngOnChanges(changes: SimpleChanges): void {
-
+    
   // }
 }

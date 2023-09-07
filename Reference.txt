@@ -323,3 +323,56 @@ Directives
 
   4. Custom Structural Directives (Todo)
 
+
+contact manager CRUD app 
+====================
+  1. Create Contact (CREATE)
+      http://localhost:4200/contact-manager/add
+
+  2. List Contacts (READ)
+      http://localhost:4200/contact-manager/ 
+
+  3. Fetch Contact Details (READ)
+      http://localhost:4200/contact-manager/1
+
+  4. Update Contact (UPDATE)
+      http://localhost:4200/contact-manager/1
+
+  5. Delete Contact (DELETE -- Todo)
+      http://localhost:4200/contact-manager/1
+
+
+
+
+Feature Module and Feature Routing Module 
+===========================================
+App Module kinda Module for the Feature 
+  ng g m contact-manager/contact-manager --flat -m=app 
+
+App Routing Module Kinda Module for the feature
+  ng g m contact-manager/contact-manager-routing --flat -m=contact-manager
+
+
+Forms in Angular
+=======
+  1. Template Driven Forms 
+      * you can build with HTMLs 
+      * easiest type of form 
+      * directives are used for validations 
+
+      Disadv 
+      -------
+        1. Not Suitable for complex form validations 
+        2. Not Suitable for Unit Testing 
+
+  2. Reactive Forms (Recommended)
+      * you can build with HTMLs + TS 
+      * easy to implement 
+      * you can do validations with angular's built-in validators 
+
+      Adv 
+      --- 
+        1. Suitable for complex form validations 
+        2. Suitable for Unit Testing 
+
+====================
