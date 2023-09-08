@@ -376,3 +376,12 @@ Forms in Angular
         2. Suitable for Unit Testing 
 
 ====================
+
+Reactive Forms 
+==============
+  0. Have the html form [done]
+  1. Have the ts equivalent for the html form tag 
+  2. Have the ts equivalent for the html form elements 
+  3. Link html form with the ts equivalent
+  4. Link html form element with the ts equivalent
+  5. work on submitting the form data 

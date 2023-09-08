@@ -14,6 +14,7 @@ import { UserInfoComponent } from './concepts/components/user-info/user-info.com
 import { ReportsComponent } from './concepts/components/reports/reports.component';
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
 import { ContactManagerModule } from './contact-manager/contact-manager.module';
+import { HttpClientModule } from '@angular/common/http';
 
 // Main Switching Box
 @NgModule({
@@ -29,7 +30,13 @@ import { ContactManagerModule } from './contact-manager/contact-manager.module';
     ReportsComponent,
     ColorizerDirective
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ContactManagerModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ContactManagerModule,
+    HttpClientModule
+  ],
   providers: [],
   bootstrap: [AppComponent] // AppModule bootstrapped with a comp -- AppComp
 })
