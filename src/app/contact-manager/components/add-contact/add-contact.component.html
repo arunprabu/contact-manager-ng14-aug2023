@@ -6,7 +6,10 @@
     </div>
 
     <!-- Step 3: patchup form tag with the FormGroup in ts -->
-    <form class="col-md-6 offset-md-3">
+    <form
+      class="col-md-6 offset-md-3"
+      [formGroup]="addContactForm"
+      (ngSubmit)="addContact()">
       <!-- step 7: work on submission flow -- ref ts for step 8-->
       <div class="form-group row mb-3">
         <label for="staticName" class="col-sm-2 col-form-label">Name</label>
@@ -17,7 +20,13 @@
             type="text"
             class="form-control"
             placeholder="Enter Name"
-            id="nameInput" />
+            id="nameInput"
+            formControlName="name"
+            [ngClass]="{
+              'is-invalid':
+                addContactForm.get('name')?.touched &&
+                addContactForm.get('name')?.invalid
+            }" />
           <!-- step6: displaying validation related msg -->
           <div class="invalid-feedback">
             <div id="nameRequired">Name is required</div>
@@ -27,21 +36,21 @@
       <div class="form-group row mb-3">
         <label for="staticPhone" class="col-sm-2 col-form-label">Phone</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" placeholder="Enter Phone" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Phone"
+            formControlName="phone"
+            [ngClass]="{
+              'is-invalid':
+                addContactForm.get('phone')?.touched &&
+                addContactForm.get('phone')?.invalid
+            }" />
           <div class="invalid-feedback">
-            <div
-              id="phoneRequired">
-              Phone is required
-            </div>
+            <div id="phoneRequired">Phone is required</div>
             <!-- TODO: Min 10 Characters -->
-            <div
-              id="phoneMaxLength">
-              Please, Enter 10 digit Mobile Number
-            </div>
-            <div
-              id="phonePattern">
-              Enter only Number
-            </div>
+            <div id="phoneMaxLength">Please, Enter 10 digit Mobile Number</div>
+            <div id="phonePattern">Enter only Number</div>
           </div>
         </div>
       </div>
@@ -52,14 +61,22 @@
             type="email"
             class="form-control"
             placeholder="Enter Email"
-            id="emailInput"/>
+            id="emailInput"
+            formControlName="email"
+            [ngClass]="{
+              'is-invalid':
+                addContactForm.get('email')?.touched &&
+                addContactForm.get('email')?.invalid
+            }" />
           <div class="invalid-feedback">
             <div
-              id="emailRequired">
+              id="emailRequired"
+              *ngIf="addContactForm.get('email')?.errors?.['required']">
               Email is required
             </div>
             <div
-              id="invalidEmail">
+              id="invalidEmail"
+              *ngIf="addContactForm.get('email')?.errors?.['email']">
               Email seems to be not valid
             </div>
           </div>
@@ -70,9 +87,7 @@
       <div class="form-group row">
         <div class="col-sm-10 offset-sm-2">
           <!-- TODO: Learn about disabling the submit button in case of error-->
-          <button
-            type="submit"
-            class="btn btn-primary submitBtn">
+          <button type="submit" class="btn btn-primary submitBtn">
             Submit
           </button>
         </div>
