@@ -22,4 +22,25 @@ export class ContactsService {
         return res; // 4. send the res to the component
       }));     
   }
+
+  getContacts() {
+    return this.http.get('https://jsonplaceholder.typicode.com/users')
+      .pipe(map((res: any) => {
+        console.log(res);
+        return res;
+      }));
+  }
+
+  getContactById(id: string | null) {
+    return this.http
+      .get('https://jsonplaceholder.typicode.com/users/' + id)
+      .pipe(
+        map((res: any) => {
+          console.log(res);
+          return res;
+        })
+      );
+   
+  }
+
 }
